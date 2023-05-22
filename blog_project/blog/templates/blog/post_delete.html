@@ -1,0 +1,15 @@
+{% comment %} <h1> Delete Post</h1>
+<p>Are yoou sure you want to delete "{{post.title}}"?</p>
+<form method="Post">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+</form> {% endcomment %}
+
+{% comment %} rough work {% endcomment %}
+
+<h1>Delete Post</h1>
+<p>Are you sure you want to delete "{{ post.title }}"?</p>
+<form method="post" action="{% url 'post_delete' post.id %}">
+  {% csrf_token %}
+  <button type="submit">Delete</button>
+</form>

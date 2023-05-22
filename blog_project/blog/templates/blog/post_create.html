@@ -1,0 +1,29 @@
+{% comment %} <h1>Create New Post</h1>
+<form method='Post'>
+    {% csrf_tokan %}
+    <label for="title">Title:</label>
+    <input type="text" name="title" required>
+    <label for="content">Content:</label>
+    <textarea name="content" required></textarea>
+    <button type="submit">Create</button>
+</form> {% endcomment %}
+
+
+
+<h1>Create New Post</h1>
+
+<form method='post'>
+    {% csrf_token %}
+    <label for="title">Title:</label>
+    <input type="text" name="title" required>
+    <label for="content">Content:</label>
+    <textarea name="content" required></textarea>
+    <button type="submit">Create</button>
+    
+</form>
+<img src="k.jpg" alt="Girl in a jacket" width="500" height="600">
+
+{% comment %} <img src="C:\Users\HP\Downloads\pexels-pixabay-60597.jpg" alt="zdczsf" ></img> {% endcomment %}
+
+
+
